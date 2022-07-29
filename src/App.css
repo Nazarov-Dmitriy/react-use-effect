@@ -1,0 +1,91 @@
+.App {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 700px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  border-top: 1px solid black;
+}
+
+.list_item {
+  cursor: pointer;
+  padding: 10px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+
+}
+
+/* Spinner css */
+
+.spinner {
+  margin: 50px auto 0 auto;
+}
+
+.spinner__animation {
+  display: inline-block;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border-top: 3px solid rgba(0, 0, 0, 0.1);
+  border-right: 3px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+  border-left: 3px solid rgb(129, 138, 145);
+  animation: loading-spinner 0.5s infinite linear;
+}
+
+.spinner__info {
+  display: block;
+  padding-top: 5px;
+  color: rgb(129, 138, 145);
+  font-size: .9rem;
+}
+
+@keyframes loading-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.wrapper-detailis {
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+}
+
+.desription-img {
+  width: 300px;
+  height: 300px;
+  margin-bottom: -4px;
+}
+
+.detailis-name,
+.detailis-city,
+.detailis-company,
+.detailis-position {
+  border-top: 1px solid black;
+  margin: 0;
+  padding: 10px;
+}
+
